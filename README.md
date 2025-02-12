@@ -2,8 +2,6 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
 npm run dev
 # or
@@ -13,12 +11,16 @@ pnpm dev
 # or
 bun dev
 ```
+推荐使用 bun 启动
+如果还未下载 bun，请参考[https://bun.sh/docs/installation](https://bun.sh/docs/installation)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Introduce
+这是一个整合了`Nextjs15`、`UnoCSS`、`Antd`的模板项目，同时使用到了`UnoCSS`的 `Attributify Preset` 写法
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+需要注意的是，该模板中使用的是`React 18`版本，由于`React 19`调整了`react-dom`的导出方式，
+导致 antd 无法直接使用 ReactDOM.render 方法，导致 antd 部分功能无法正常使用，
+同时也导致了很多包对`React 19`的兼容度还不够，但是 `Nextjs15`的许多新特性又还不错，例如 `turbopack`稳定了，
+因此才采用了`Nextjs15`+`React 18`的组合
 
 ## Learn More
 
